@@ -1,0 +1,85 @@
+
+
+@media (max-width: 1024px) {
+    .header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 0;
+        gap: 1rem;
+    }
+
+    .header .main li a{
+       padding: 1.5rem;
+    }
+
+    .home .home-informations {
+        padding: 2rem;
+    }
+
+    .home .home-informations img{
+        max-width: 6.5rem;
+    }
+
+    .home-informations .home-title {
+        font-size: 2.3rem;
+    }
+
+    .buy .buy-card {
+        width: 70vw;
+    }
+
+    .buy-card button {
+        max-width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .buy {
+        padding: 2rem;
+    }
+
+    .buy .buy-card {
+        width: 100%;
+        padding: 5rem 1.25rem;
+    }
+
+    .buy-card button {
+        max-width: 60vw;
+    }
+
+    .buy .buy-informations h3 {
+        font-size: 2rem;
+    }
+
+    .buy .buy-informations p {
+        font-size: 0.99rem;
+    }
+
+    .buy .buy-informations ul {
+        flex-direction: column;
+    }
+
+    .buy-card buttom{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .home-informations a {
+        width: 100%;
+    }
+
+    .home::after {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.1) 100%, transparent 100%);
+}
+
+}
+
+@media (max-width: 425px) {
+    .home::after {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+    }
+
+    .buy-card > img{
+        width: 55vw;
+    }
+}

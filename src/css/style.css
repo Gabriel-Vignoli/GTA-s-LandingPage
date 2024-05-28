@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #282828;
+    color: #fff;
+}
+
+.header {
+    height: 5.5rem;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5rem;
+    border-bottom: 1px solid #282828;
+}
+
+.header .soon {
+    display: flex;
+    gap: 1rem; /*vai dar um espaçamento entre todos os filhos dessa div*/
+}
+
+.header nav .main {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .main li a {
+    padding: 2rem;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: "Chalet";
+}
+
+.header .main li a:hover {
+    border-bottom: 2px solid #f28943;
+    color: #f28943;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.home .home-bg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .home-informations {
+    position: absolute;
+    z-index: 10;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:  2rem;
+    padding: 5.5rem 5.5rem 5.5rem 10.7rem;
+    max-width: 49rem;
+}
+
+.home .home-informations img {
+    max-width: 9.5rem;  
+} 
+
+.home .home-img {
+    display: flex;
+    gap: 2rem;
+}
+
+.home .home-title {
+    font-family: "Oswald";
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.home .home-text {
+    font-family: "Karla";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.home-btn, .buy-card > button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f28943;
+    border: 0.5px solid #f28943;
+    border-radius: 0.25rem;
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.25rem 2.5rem;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.buy-card > button {
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.home-btn:hover {
+    background-color: #f28943;
+    color: #fff;
+}
+
+.buy-card > img {
+    width: 21rem;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3.1rem;
+    align-items: center;
+}
+
+.buy .buy-title {
+    font-family: "Oswald";
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3.1rem;
+}
+
+.buy-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50vw;
+    border-radius: 0.6rem;
+    padding: 4.4rem 2rem;
+    gap: 2.1rem;
+}
+
+.buy .buy-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buy .buy-informations h3 {
+    font-family: "Oswald";
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.buy .buy-informations p {
+    font-family: "Karla";
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.buy .buy-informations > ul {
+    display: flex;
+    flex-wrap: wrap; /*quando n caber mais na mesma linha é pra quebrar para baixo*/
+    gap: 2rem;
+    justify-content: center;
+}
+
+.buy-card button {
+    max-width: 30vw;
+}
+
+.buy .buy-card button .buy-plattaforms {
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all 3.s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.buy .buy-card button .activty {
+    display: flex;
+    opacity: 1;
+}
+
+.buy .buy-card button .buy-plattaforms li {
+    padding: 1.25rem;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(1){
+    border: 1px solid #00439c;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(1):hover{
+    background-color: #00439c;
+}
+.buy .buy-card button .buy-plattaforms li:nth-child(2){
+    border: 1px solid #387a26;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(2):hover{
+    background-color: #387a26;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(3) {
+    border: 1px solid #00439c;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(3):hover {
+    background-color: #00439c;
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(4) {
+    border: 1px solid #387a26; 
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(4):hover {
+    background-color: #387a26;
+}
+.buy .buy-card button .buy-plattaforms li:nth-child(5) {
+    border: 1px solid #fcaf17; 
+}
+
+.buy .buy-card button .buy-plattaforms li:nth-child(5):hover {
+    background-color: #fcaf17;
+}
